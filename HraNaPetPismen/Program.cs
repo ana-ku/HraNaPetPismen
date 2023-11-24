@@ -4,7 +4,8 @@ using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
-string cesta = @"C:\Users\user\Desktop\PetPismen.txt";
+var cesta = Path.Combine(Directory.GetCurrentDirectory(), "PetPismen.txt");
+
 
 string[] slova = File.ReadAllLines(cesta);
 
