@@ -19,15 +19,11 @@ Random random = new Random();
 int index = random.Next(0, slova.Length);
 string myslimSiSlovo = slova[index];
 string distinctMyslimSi = string.Join("", myslimSiSlovo.Distinct()); //vyberu jen jedinečná písmena
-Console.WriteLine(myslimSiSlovo);
-//Console.WriteLine(myslimSiSlovo);
 
 //pravidla hry
 Console.WriteLine(" Tvým úkolem je přijít na slovo, které si počítač myslí. Zadávej jen slova, která mají pět písmen, jsou v první osobě jednotného čísla a neobsahují diakritiku, např. 'potok'.");
 
 //vyzvu uživatele, aby zadal svoje slovo
-
-
 
 while (true)
 {
